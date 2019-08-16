@@ -1,3 +1,7 @@
+jQuery(document).ready(function($) {
+	$('a[data-rel^=lightcase]').lightcase();
+});
+
 document.getElementById("search-box").addEventListener("keyup", function() {
   let linkedImages = document.getElementsByTagName('a');
   let inputValue = document.getElementById("search-box").value.toLowerCase();
