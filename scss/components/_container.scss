@@ -1,0 +1,14 @@
+// ======================================
+//  Container
+// ======================================
+
+.container {
+  @include centered-e($text-a: center);
+  @include centered-c;
+  @include media-q(large) {
+    max-width: $max-width;
+  }
+  &:last-child {
+    margin-top: em(40);
+  }
+}

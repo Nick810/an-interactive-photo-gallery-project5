@@ -1,0 +1,32 @@
+// ======================================
+//  Mixins
+// ======================================
+
+@function em($pixels, $context: $default-font-size) {
+  @return ($pixels / $context) * 1em;
+}
+
+@mixin centered-c($width: null, $display: null) {
+  max-width: $width;
+  display: $display;
+  margin: 0 auto;
+}
+
+@mixin centered-e($text-a: null, $align-i: null) {
+  text-align: $text-a;
+  align-items: $align-i;
+}
+
+@mixin media-q($break) {
+
+  @if $break == 'medium' {
+    @media (min-width: $break-m) {
+      @content;
+    }
+  }
+  @else if $break == 'large' {
+    @media (min-width: $break-l) {
+      @content;
+    }
+  }
+}

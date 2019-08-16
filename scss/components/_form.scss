@@ -1,0 +1,17 @@
+// ======================================
+//  Form
+// ======================================
+
+.search-box {
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: left;
+  padding: em(15) em(20) em(15) em(15);
+  margin-top: em(60);
+  margin-bottom: em(5);
+  background-color: #e8eeef;
+  @include media-q(medium) {
+    padding: em(10) em(20) em(10) em(15);
+  }
+}
